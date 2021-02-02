@@ -4,10 +4,10 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' show LatLng;
-import 'package:llevo/src/models/address.dart';
-import 'package:llevo/src/models/autocomplete_result.dart';
-import 'package:llevo/src/resources/repositories/service_repo.dart';
-import 'package:llevo/src/utils/errors/crashlytics_error.dart';
+import 'package:ex-package/src/models/address.dart';
+import 'package:ex-package/src/models/autocomplete_result.dart';
+import 'package:ex-package/src/resources/repositories/service_repo.dart';
+import 'package:ex-package/src/utils/errors/crashlytics_error.dart';
 import 'package:uuid/uuid.dart';
 
 part 'autocomplete_event.dart';

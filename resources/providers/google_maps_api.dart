@@ -1,9 +1,9 @@
 import 'dart:convert' show json;
 import 'package:google_maps_flutter/google_maps_flutter.dart' show LatLng;
 import 'package:http/http.dart' as http;
-import 'package:llevo/src/models/autocomplete_result.dart';
-import 'package:llevo/src/models/service_info.dart';
-import 'package:llevo/src/utils/utils.dart'
+import 'package:ex-package/src/models/autocomplete_result.dart';
+import 'package:ex-package/src/models/service_info.dart';
+import 'package:ex-package/src/utils/utils.dart'
     show getFormattedTextFromAddressComponents;
 
 import '../../../../models/address.dart';

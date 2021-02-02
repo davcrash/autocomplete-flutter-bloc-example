@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:llevo/src/modules/service_2/blocs/autocomplete/autocomplete_bloc.dart';
-import 'package:llevo/src/modules/service_2/blocs/selecting_addresses/selecting_addresses_bloc.dart';
+import 'package:ex-package/src/modules/service_2/blocs/autocomplete/autocomplete_bloc.dart';
+import 'package:ex-package/src/modules/service_2/blocs/selecting_addresses/selecting_addresses_bloc.dart';
 
 class AddAddressButton extends StatelessWidget {
   @override

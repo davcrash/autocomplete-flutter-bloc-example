@@ -3,10 +3,10 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' show LatLng;
-import 'package:llevo/src/models/autocomplete_result.dart';
-import 'package:llevo/src/models/service_info.dart';
-import 'package:llevo/src/resources/providers/firestore_chat.dart';
-import 'package:llevo/src/resources/providers/google_maps_api.dart';
+import 'package:ex-package/src/models/autocomplete_result.dart';
+import 'package:ex-package/src/models/service_info.dart';
+import 'package:ex-package/src/resources/providers/firestore_chat.dart';
+import 'package:ex-package/src/resources/providers/google_maps_api.dart';
 import 'package:location/location.dart';
 
 import '../../../../models/rating.dart';
