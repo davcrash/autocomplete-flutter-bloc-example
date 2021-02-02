@@ -74,11 +74,7 @@ class AddressButton extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10.0),
           child: InkWell(
             onTap: () {
-              BlocProvider.of<SelectingAddressesBloc>(context).add(
-                SelectingAddressesDeleted(
-                  index: index,
-                ),
-              );
+              //CODE
             },
             child: Container(
               width: 40,
@@ -100,23 +96,7 @@ class AddressButton extends StatelessWidget {
     final autocompleteBloc = BlocProvider.of<AutocompleteBloc>(
       context,
     );
-    //ignore: close_sinks
-    final requestServiceBloc = BlocProvider.of<RequestServiceBloc>(
-      context,
-    );
-    //ignore: close_sinks
-    final selectingAddressesBloc = BlocProvider.of<SelectingAddressesBloc>(
-      context,
-    );
-    //ignore: close_sinks
-    final confirmAddressBloc = BlocProvider.of<ConfirmAddressBloc>(
-      context,
-    );
 
-    //ignore: close_sinks
-    final recentAddressBloc = BlocProvider.of<RecentAddressesBloc>(
-      context,
-    );
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -126,18 +106,7 @@ class AddressButton extends StatelessWidget {
               BlocProvider<AutocompleteBloc>.value(
                 value: autocompleteBloc,
               ),
-              BlocProvider<RequestServiceBloc>.value(
-                value: requestServiceBloc,
-              ),
-              BlocProvider<SelectingAddressesBloc>.value(
-                value: selectingAddressesBloc,
-              ),
-              BlocProvider<ConfirmAddressBloc>.value(
-                value: confirmAddressBloc,
-              ),
-              BlocProvider<RecentAddressesBloc>.value(
-                value: recentAddressBloc,
-              ),
+              //Others Providers
             ],
             child: AutocompleteOneUI(
               address: address,

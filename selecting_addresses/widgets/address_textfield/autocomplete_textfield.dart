@@ -36,11 +36,6 @@ class _AutocompleteTextFieldState extends State<AutocompleteTextField> {
   void initState() {
     super.initState();
     if (widget.address != null) _controller.text = widget.address.formatted;
-
-    userLocation = BlocProvider.of<RequestServiceBloc>(context)
-        .state
-        .userAddress
-        ?.getLatLng();
   }
 
   @override
@@ -101,14 +96,7 @@ class _AutocompleteTextFieldState extends State<AutocompleteTextField> {
     if (_debounce?.isActive ?? false) _debounce.cancel();
     _debounce = Timer(const Duration(milliseconds: 500), () {
       if (text == "") {
-        BlocProvider.of<SelectingAddressesBloc>(
-          context,
-        ).add(
-          SelectingAddressesUpdated(
-            index: widget.index,
-            newAddress: null,
-          ),
-        );
+        //CODE
         return;
       }
 
@@ -131,11 +119,6 @@ class _AutocompleteTextFieldState extends State<AutocompleteTextField> {
     if (state.addresses[indexToValidate] == null) {
       BlocProvider.of<AutocompleteBloc>(context).add(
         AutocompleteChangeIndex(indexToValidate),
-      );
-      BlocProvider.of<SelectingAddressesBloc>(
-        context,
-      ).add(
-        SelectingAddressesGoToEditIndex(index: indexToValidate),
       );
     }
   }
